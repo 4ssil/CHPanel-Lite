@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        
+        <!-- system fields -->
+        
+        <field
+            name="id"
+            type="text"
+            readonly="true" 
+            class="readonly"
+            label="JGLOBAL_FIELD_ID_LABEL"
+            description ="JGLOBAL_FIELD_ID_DESC"
+            default="0"
+        />
+        <field
+            name="state"
+            type="list"
+            class="inputbox chzn-color-state"
+            default="1"
+            size="1"
+            label="COM_CHPANEL_ANY_PUBLISHED"
+            description="COM_CHPANEL_ANY_PUBLISHED_DESC">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field> 
+        <field
+            name="language"
+            type="contentlanguage"
+            label="COM_CHPANEL_ANY_LANGUAGE"
+            description="COM_CHPANEL_ANY_LANGUAGE_DESC"
+            class="inputbox">
+        </field>  
+        <field 
+            name="created" 
+            type="calendar" 
+            label="JGLOBAL_CREATED"
+            description="JGLOBAL_CREATED_DESC" 
+            class="inputbox" 
+            format="%Y-%m-%d %H:%M:%S" 
+            filter="user_utc" 
+        />
+        <field type="hidden" name="created_by" />
+        <field type="hidden" name="checked_out" />
+        <field type="hidden" name="checked_out_time" />        
+
+        
+        
+        <!-- info fields -->
+        <field
+            name="title"
+            type="text"
+            class="inputbox input-xxlarge input-large-text"
+            label="COM_CHPANEL_HOTEL_TITLE"
+            description="COM_CHPANEL_HOTEL_TITLE_DESC"
+            required="true"
+        />
+        <field
+            name="alias"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_HOTEL_ALIAS"
+            description="COM_CHPANEL_HOTEL_ALIAS_DESC"
+            hint="JFIELD_ALIAS_PLACEHOLDER" 
+        />
+        <field
+            name="info"
+            type="textarea"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_HOTEL_INFO"
+            description="COM_CHPANEL_HOTEL_INFO_DESC"
+        />
+        <field
+            name="text"
+            type="textarea"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_HOTEL_TEXT"
+            description="COM_CHPANEL_HOTEL_TEXT_DESC"
+        />           
+        <field
+            name="conditions"
+            type="textarea"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_HOTEL_CONDITIONS"
+            description="COM_CHPANEL_HOTEL_CONDITIONS_DESC"
+        />  
+        <field
+            name="video"
+            type="text"
+            class="inputbox"
+            label="COM_CHPANEL_HOTEL_VIDEO"
+            description="COM_CHPANEL_HOTEL_VIDEO_DESC"
+        />   
+                
+        <!-- contact --> 
+        <field
+            name="street"
+            type="text"
+            class="inputbox input-xxlarge"
+            default=""
+            label="COM_CHPANEL_HOTEL_STREET"
+            description="COM_CHPANEL_HOTEL_STREET_DESC"
+        />  
+        <field
+            name="zip"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_ZIP"
+            description="COM_CHPANEL_HOTEL_ZIP_DESC"
+        />     
+        <field
+            name="city"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_CITY"
+            description="COM_CHPANEL_HOTEL_CITY_DESC"
+        />    
+        <field
+            name="region"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_REGION"
+            description="COM_CHPANEL_HOTEL_REGION_DESC"
+        />     
+        <field
+            name="country"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_COUNTRY"
+            description="COM_CHPANEL_HOTEL_COUNTRY_DESC"
+        />     
+        
+        <field
+            name="phone"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_PHONE"
+            description="COM_CHPANEL_HOTEL_PHONE_DESC"
+        />     
+        
+        <field
+            name="email"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_EMAIL"
+            description="COM_CHPANEL_HOTEL_EMAIL_DESC"
+        />          
+
+        <field
+            name="lat"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_LAT"
+            description="COM_CHPANEL_HOTEL_LAT_DESC"
+        />          
+
+        <field
+            name="lng"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_LNG"
+            description="COM_CHPANEL_HOTEL_LNG_DESC"
+        />          
+
+        <field
+            name="zoom"
+            type="text"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_ZOOM"
+            description="COM_CHPANEL_HOTEL_ZOOM_DESC"
+        />    
+        
+        
+        <field
+            name="timezone"
+            type="timezone"
+            required="true"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_TIMEZONE"
+            description="COM_CHPANEL_HOTEL_TIMEZONE_DESC"
+        />            
+        <field
+            name="notify"
+            type="text"
+            required="true"
+            class="inputbox"
+            default=""
+            label="COM_CHPANEL_HOTEL_NOTIFY"
+            description="COM_CHPANEL_HOTEL_NOTIFY_DESC"
+        />                  
+
+    </fieldset>
+    
+    <fields name="params">
+        
+        <fieldset name="params">
+            
+            <field
+                name="cat100"
+                type="chpanelcat100"
+                class="inputbox"
+                default=""
+                label="COM_HOTEL_CAT_100"
+            />    
+            <field
+                name="cat200"
+                type="chpanelcat200"
+                class="inputbox"
+                default=""
+                label="COM_HOTEL_CAT_200"
+            />    
+            <field
+                name="cat300"
+                type="chpanelcat300"
+                class="inputbox"
+                default=""
+                label="COM_HOTEL_CAT_300"
+            />    
+            <field
+                name="cat400"
+                type="chpanelcat400"
+                class="inputbox"
+                default=""
+                label="COM_HOTEL_CAT_400"
+            />                
+            <field
+                name="cat500"
+                type="chpanelcat500"
+                class="inputbox"
+                multiple="true"
+                default=""
+                label="COM_HOTEL_CAT_500"
+            />              
+            <field
+                name="cat600"
+                type="chpanelcat600"
+                class="inputbox"
+                multiple="true"
+                default=""
+                label="COM_HOTEL_CAT_600"
+            />    
+            
+        </fieldset>
+        
+    </fields>
+    
+</form>

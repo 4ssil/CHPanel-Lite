@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <!-- details -->
+        <field
+            name="id"
+            type="text"
+            readonly="true" 
+            class="readonly"
+            label="JGLOBAL_FIELD_ID_LABEL"
+            default="0"
+        />
+        <field type="hidden" name="hotel_id" />
+        <field
+            name="hotel"
+            type="text"
+            label="COM_CHPANEL_ANY_HOTEL"
+            class="readonly"
+            filter="unset"
+            readonly="true"
+        />       
+        <field 
+            name="created" 
+            type="text" 
+            label="JGLOBAL_CREATED"
+            readonly="true"
+        />
+        <field type="hidden" name="created_by" />
+        <field type="hidden" name="checked_out" />
+        <field type="hidden" name="checked_out_time" />    
+
+        
+        <field
+            name="checkin"
+            type="calendar"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_CHECKIN"
+            required="true"
+        />
+        <field
+            name="checkout"
+            type="calendar"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_CHECKOUT"
+            required="true"
+        />
+        
+        
+
+        <field
+            name="amount"
+            type="text"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_AMOUNT"
+        />
+        <field
+            name="payment"
+            type="text"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_PAYMENT"
+        />
+        
+        <field 
+            name="status" 
+            type="groupedlist" 
+            label="COM_CHPANEL_BOOKING_STATUS" 
+        >
+            <group label="COM_CHPANEL_BOOKING_STATUSES_CONFIRMED">
+                <option value="201">COM_CHPANEL_BOOKING_STATUS_CONFIRMED_WEBSITE</option>
+                <option value="202">COM_CHPANEL_BOOKING_STATUS_CONFIRMED_USER</option>
+                <option value="203">COM_CHPANEL_BOOKING_STATUS_CONFIRMED_BLOCKED</option>
+            </group>
+            <group label="COM_CHPANEL_BOOKING_STATUSES_CANCELLED">
+                <option value="301">COM_CHPANEL_BOOKING_STATUS_CANCELLED_GUEST</option>
+                <option value="302">COM_CHPANEL_BOOKING_STATUS_CANCELLED_USER</option>
+                <option value="303">COM_CHPANEL_BOOKING_STATUS_CANCELLED_NOSHOW</option>
+            </group>
+            <group label="COM_CHPANEL_BOOKING_STATUSES_PROCESSING">
+                <option value="101">COM_CHPANEL_BOOKING_STATUS_PROCESSING</option>
+                <option value="102">COM_CHPANEL_BOOKING_STATUS_PROCESSING_PAYMENT</option>
+            </group>            
+            <group label="COM_CHPANEL_BOOKING_STATUSES_ABORTED">
+                <option value="401">COM_CHPANEL_BOOKING_STATUS_ABORTED</option>
+                <option value="402">COM_CHPANEL_BOOKING_STATUS_ABORTED_EXPIRED_PENDING</option>
+                <option value="403">COM_CHPANEL_BOOKING_STATUS_ABORTED_EXPIRED_PENDING_PAYMENT</option>
+            </group>           
+        </field>
+        
+        <field
+            name="payment_status"
+            type="list"
+            class="inputbox"
+            default="1"
+            size="1"
+            label="COM_CHPANEL_BOOKING_PAYMENT_STATUS"
+        >
+            <option value="0">COM_CHPANEL_BOOKING_PAYMENT_STATUS_NO</option>
+            <option value="1">COM_CHPANEL_BOOKING_PAYMENT_STATUS_PAYED_CC</option>
+            <option value="2">COM_CHPANEL_BOOKING_PAYMENT_STATUS_CC</option>
+            <option value="3">COM_CHPANEL_BOOKING_PAYMENT_STATUS_PAYED_CASH</option>
+            <option value="4">COM_CHPANEL_BOOKING_PAYMENT_STATUS_OTHER</option>
+        </field> 
+        
+        
+        <!-- guest fields -->
+
+        
+        <field
+            name="voucher"
+            type="text"
+            class="inputbox input-large-text"
+            label="COM_CHPANEL_BOOKING_VOUCHER"
+            readonly="true"
+        />     
+        <field
+            name="first_name"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_FIRST_NAME"
+        />
+        <field
+            name="last_name"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_LAST_NAME"
+        />
+        <field
+            name="email"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_EMAIL"
+        />
+        <field
+            name="phone"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_PHONE"
+        />  
+        <field
+            name="street"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_STREET"
+        />    
+        <field
+            name="zip"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_ZIP"
+        />            
+        <field
+            name="city"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_CITY"
+        />    
+        <field
+            name="country"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_COUNTRY"
+        />    
+        <field
+            name="comments"
+            type="textarea"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_BOOKING_COMMENTS"
+            rows="6"
+        />  
+        
+        <!-- room -->
+        
+          
+        <field
+            name="room_id"
+            type="chpanelroom"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_ROOM"
+            required="true"
+        />
+        <field
+            name="board"
+            type="list"
+            class="inputbox"
+            default="1"
+            size="1"
+            label="COM_CHPANEL_BOOKING_BOARD"
+        >
+            <option value="ro">COM_CHPANEL_ANY_BOARD_RO</option>
+            <option value="bb">COM_CHPANEL_ANY_BOARD_BB</option>
+            <option value="hb">COM_CHPANEL_ANY_BOARD_HB</option>
+            <option value="fb">COM_CHPANEL_ANY_BOARD_FB</option>
+            <option value="ai">COM_CHPANEL_ANY_BOARD_AI</option>
+        </field> 
+        
+        <field
+            name="adult"
+            type="text"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_ADULT"
+            description="COM_CHPANEL_BOOKING_ADULT_DESC"
+            default="2"
+        />   
+        <field
+            name="child"
+            type="text"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_CHILD"
+            description="COM_CHPANEL_BOOKING_CHILD_DESC"
+            default="0"
+        />   
+        <field
+            name="baby"
+            type="text"
+            class="inputbox"
+            label="COM_CHPANEL_BOOKING_BABY"
+            description="COM_CHPANEL_BOOKING_BABY_DESC"
+            default="0"
+        />   
+        
+        <!-- tracking -->
+              
+     
+    </fieldset>
+    
+    <fields name="params">
+        
+        <fieldset name="params">
+            
+            <field
+                name="findus"
+                type="text"
+                class="inputbox"
+                label="COM_CHPANEL_BOOKING_FIND_US"
+            />       
+
+        </fieldset>
+        
+    </fields>
+</form>

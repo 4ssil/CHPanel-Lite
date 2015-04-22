@@ -1,0 +1,323 @@
+/**
+ * @package     CHPanel
+ * @subpackage  com_chpanel
+ * @copyright   Copyright (C) 2013 - 2014 CloudHotelier. All rights reserved.
+ * @license     GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ * @link        http://www.cloudhotelier.com
+ * @author      Xavier Pallicer <xpallicer@cloudhotelier.com>
+ */
+
+/* toolbar icons */
+.icon-panel:before{
+    content: "\78";
+}
+.icon-manage:before{
+    content: "\43";
+}
+.icon-booking:before,
+.icon-bookings:before{
+    content: "\50";
+}
+.icon-hotel:before,
+.icon-hotels:before{
+    content: "\e250";
+}
+.icon-rooms:before,
+.icon-rooms:before{
+    content:"\e257";
+}
+
+/* panel */
+.ch-news h4{
+    margin: 20px 0 8px;
+}
+
+.ch-news h4:first-child{
+    margin-top: 0;
+}
+
+/* bookings */
+
+.chpanel-bookings-datefilters label{
+    display: inline-block;
+    min-width: 60px;
+}
+
+.chpanel-bookings-datefilter{
+    margin-bottom: 9px;
+}
+
+/* manage */
+
+.chpanel-manage-weekday-2{
+    background: #FCFCFC;
+}
+.chpanel-manage-weekday-3{
+    background: #FAFAFA;
+}
+.chpanel-manage-weekday-4{
+    background: #F7F7F7;
+}
+.chpanel-manage-weekday-5{
+    background: #F5F5F5;
+}
+.chpanel-manage-weekday-6{
+    background: #F2F2F2;
+}
+.chpanel-manage-weekday-7{
+    background: #F0F0F0;
+}
+.chpanel-manage-weekday-1{
+    background: #EDEDED;
+}
+
+.table.chpanel-manage-table th,
+.table.chpanel-manage-table td{
+    text-align: center;
+    font-size: 90%;
+}
+
+.table td.chpanel-manage-room,
+.table td.chpanel-manage-update-room{
+    text-align: left;
+    vertical-align: middle;
+    min-width: 60px;
+}
+
+.table.chpanel-manage-table td.chpanel-manage-date{
+    padding: 3px 2px;
+}
+
+.table.chpanel-manage-table td.chpanel-manage-date span{
+    display: block;
+}
+
+span.chpanel-manage-available-no,
+span.chpanel-manage-available-ok,
+span.chpanel-manage-available-low{
+    width: 100%;
+    height: 1px;
+    border-bottom: 6px solid #FFBB00;
+}
+span.chpanel-manage-available-no{
+    border-bottom: 6px solid #b94a48;
+}
+span.chpanel-manage-available-ok{
+    border-bottom: 6px solid #468847;
+}
+span.chpanel-manage-available-low{
+    border-bottom: 6px solid #f89406;
+}
+span.chpanel-manage-processing-0.no{
+    background: #f2dede;
+    color: #b94a48;
+    border: 1px solid #eed3d7;
+    border-top: 0;
+}
+span.chpanel-manage-processing-0.ok{
+    background: #dff0d8;
+    color: #468847;
+    border: 1px solid #d6e9c6;
+    border-top: 0;
+}
+span.chpanel-manage-processing-0.low{
+    background: #fcf8e3;
+    color: #c09853;
+    border: 1px solid #fbeed5;
+    border-top: 0;
+}
+
+span.chpanel-manage-processing-1{
+    color: #FFF;
+    border: 1px solid #5bc0de;
+    border-top: 0;
+    background-color: #5bc0de;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+
+}
+
+span.chpanel-manage-rate{
+    padding: 7px 0  5px 0;
+}
+
+
+.table.chpanel-manage-update-table td{
+    vertical-align: middle;
+    border: 0;
+}
+
+.chpanel-manage-update-table input[type="text"],
+.chpanel-manage-update-table .input-prepend{
+    margin: 0;   
+}
+
+.chpanel-manage-update-room{
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 9px;
+}
+
+.chpanel-manage-legend .alert{
+    padding: 2px 5px 3px 1px;
+}
+
+
+/* datepciker */
+
+#chpanel-bookings-start,
+#chpanel-bookings-end,
+#chpanel-manage-start,
+#chpanel-manage-end{
+    cursor: pointer;
+    background-color: #FFF;
+    display: inline-block !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* panel */
+.chpanel-panel .btn{
+    margin-top: 10px;
+}
+
+/* gallery button */
+.chpanel-hotel-gallery.gallery-1 i{
+    color: #008E00;
+}
+span.images{
+    display: inline-block;
+    margin: 0;
+    width: 16px;
+    height: 15px;
+    background: transparent url(images.png) 0 -2px no-repeat !important;
+}
+span.images.count-0{
+    background-image: url(images0.png)!important;
+}
+
+/* translation states */
+a.translation-original,
+a.translation-missing,
+a.translation-ok,
+a.translation-check{
+    min-width: 38px;
+}
+a.translation-original{
+    color: #AAA!important;
+    cursor: default;
+}
+a.translation-original:hover{
+    text-decoration: none;
+}
+.translation-missing,
+a.translation-missing{
+    color: #777!important;
+}
+.translation-ok,
+a.translation-ok{
+    color: #008E00!important;
+}
+.translation-check,
+a.translation-check{
+    color: #E49515!important;
+}
+
+/* textarea fields */
+#jform_conditions,
+#jform_comments,
+#jform_info{ 
+    height: 100px;
+}
+#jform_text{ 
+    height: 150px;
+}
+
+
+/* thumbs in list */
+.chpanel-images-thumb{
+    width: 54px;
+    padding: 2px !important;
+}
+
+/* editor */
+.chpanel-editor{
+    width: 800px;
+    margin: 5px 0;
+}
+.chpanel-translation-editor textarea{
+    width: 800px;
+    height: 100px;
+}
+
+/* transte view */
+.chpanel-translate-image-info{
+    margin-top: -10px;
+}
+
+
+
+/* tagsinput */
+
+#adminForm .dropdown-menu > .active > a, 
+#adminForm .dropdown-menu > .active > a:hover, 
+#adminForm .dropdown-menu > .active > a:focus{
+    color: #FFF;
+}
+
+#adminForm .bootstrap-tagsinput {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: inline-block;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    max-width: 100%;
+    line-height: 22px;
+    min-width: 206px; 
+}
+#adminForm .bootstrap-tagsinput input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: auto !important;
+    max-width: inherit;
+}
+#adminForm .bootstrap-tagsinput input:focus {
+    border: none;
+    box-shadow: none;
+}
+#adminForm .bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: white;
+}
+#adminForm .bootstrap-tagsinput .tag [data-role="remove"] {
+    margin-left: 8px;
+    cursor: pointer;
+}
+#adminForm .bootstrap-tagsinput .tag [data-role="remove"]:after {
+    content: "x";
+    padding: 0px 2px;
+}
+#adminForm .bootstrap-tagsinput .tag [data-role="remove"]:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+#adminForm .bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+
+
+

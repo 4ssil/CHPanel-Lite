@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2" method="upgrade">
+    
+    <name>COM_CHPANEL</name>
+    <creationDate>Aug 2014</creationDate>
+    <author>CloudHotelier</author>
+    <authorEmail>xpallicer@cloudhotelier.com</authorEmail>
+    <authorUrl>http://www.cloudhotelier.com</authorUrl>
+    <copyright>Copyright (C) 2014 . All rights reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>1.0.2</version>
+    <description>COM_CHPANEL_DESC</description>
+
+    <administration>
+        <menu view="panel">COM_CHPANEL</menu>
+        <files folder="administrator/components/com_chpanel">
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>queries</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>chpanel.php</filename>
+            <filename>chpanel.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+        </files>
+    </administration>
+    
+    <files folder="components/com_chpanel">
+        <folder>helpers</folder>
+        <folder>language</folder>
+        <folder>models</folder>
+        <filename>chpanel.php</filename>
+    </files>
+    
+    <install>
+        <sql folder="administrator/components/com_chpanel">
+            <file driver="mysql" charset="utf8">queries/install.sql</file>
+            <file driver="mysql">queries/install.sql</file>
+            <file driver="mysqli" charset="utf8">queries/install.sql</file>
+            <file driver="mysqli">queries/install.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">queries/uninstall.sql</file>
+            <file driver="mysql">queries/uninstall.sql</file>
+            <file driver="mysqli" charset="utf8">queries/uninstall.sql</file>
+            <file driver="mysqli">queries/uninstall.sql</file>
+        </sql>
+    </uninstall>    
+ 
+</extension>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        
+        <field
+            name="search"
+            type="text"
+            label="JSEARCH_FILTER_LABEL"
+            hint="JSEARCH_FILTER"
+        />
+               
+        <field
+            name="hotel"
+            type="chpanelhotelfilter"
+            label="Hotel"
+            onchange="this.form.submit();">
+            <option value="">COM_CHPANEL_ANY_SELECT_HOTEL</option>
+        </field>
+        
+        <field
+            name="status"
+            type="list"
+            label="Status"
+            onchange="this.form.submit();"
+            default=""
+        >
+            <option value="">COM_CHPANEL_BOOKINGS_SELECT_STATUS</option>
+            <option value="200">COM_CHPANEL_BOOKING_STATUSES_CONFIRMED</option>
+            <option value="201">COM_CHPANEL_BOOKING_STATUS_CONFIRMED_WEBSITE_N</option>
+            <option value="202">COM_CHPANEL_BOOKING_STATUS_CONFIRMED_USER_N</option>
+            <option value="203">COM_CHPANEL_BOOKING_STATUS_CONFIRMED_BLOCKED_N</option>
+            <option value="300">COM_CHPANEL_BOOKING_STATUSES_CANCELLED</option>
+            <option value="301">COM_CHPANEL_BOOKING_STATUS_CANCELLED_GUEST_N</option>
+            <option value="302">COM_CHPANEL_BOOKING_STATUS_CANCELLED_USER_N</option>
+            <option value="303">COM_CHPANEL_BOOKING_STATUS_CANCELLED_NOSHOW_N</option>
+            <option value="100">COM_CHPANEL_BOOKING_STATUSES_PROCESSING</option>
+            <option value="101">COM_CHPANEL_BOOKING_STATUS_PROCESSING_N</option>
+            <option value="102">COM_CHPANEL_BOOKING_STATUS_PROCESSING_PAYMENT_N</option>
+            <option value="400">COM_CHPANEL_BOOKING_STATUSES_ABORTED</option>
+            <option value="401">COM_CHPANEL_BOOKING_STATUS_ABORTED_N</option>
+            <option value="402">COM_CHPANEL_BOOKING_STATUS_ABORTED_EXPIRED_PENDING_N</option>
+            <option value="403">COM_CHPANEL_BOOKING_STATUS_ABORTED_EXPIRED_PENDING_PAYMENT_N</option>
+        </field>
+        
+        <field
+            name="state"
+            type="list"
+            label="State"
+            onchange="this.form.submit();"
+            default=""
+        >
+            <option value="">COM_CHPANEL_BOOKINGS_SELECT_STATE</option>
+            <option value="1">JPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+        </field>
+        
+    </fields>
+    
+    <fields name="list">
+        
+        <field
+            name="fullordering"
+            type="list"
+            label="Ordering"
+            description="List Ordering"
+            onchange="this.form.submit();"
+            default="a.ordering ASC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.created ASC">JDATE_ASC</option>
+            <option value="a.created DESC">JDATE_DESC</option>
+        </field>
+        
+        <field
+            name="limit"
+            type="limitbox"
+            class="inputbox input-mini"
+            default="25"
+            label="Limit"
+            description="List Limit"
+            onchange="this.form.submit();"
+        />
+        
+    </fields>
+</form>

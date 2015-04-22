@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>    
+    
+    <!-- configuration -->
+    <fieldset name="CONFIG" label="COM_CHPANEL_CONFIG_FIELDSET_CONFIG">
+        
+        <field
+            name="gtranslate"
+            type="text"
+            default=""
+            label="COM_CHPANEL_CONFIG_GTRANSLATE"
+            description="COM_CHPANEL_CONFIG_GTRANSLATE_DESC"
+        />   
+        
+        <field
+            name="notify"
+            type="text"
+            default=""
+            label="COM_CHPANEL_CONFIG_NOTIFY"
+            description="COM_CHPANEL_CONFIG_NOTIFY_DESC"
+        />   
+        
+        <field
+            name="board"
+            type="list"
+            size="1"
+            default="bb"
+            label="COM_CHPANEL_CONFIG_BOARD"
+            description="COM_CHPANEL_CONFIG_BOARD_DESC"
+        >            
+            <option value="ro">COM_CHPANEL_ANY_BOARD_RO</option>
+            <option value="bb">COM_CHPANEL_ANY_BOARD_BB</option>
+            <option value="hb">COM_CHPANEL_ANY_BOARD_HB</option>
+            <option value="fb">COM_CHPANEL_ANY_BOARD_FB</option>
+            <option value="ai">COM_CHPANEL_ANY_BOARD_AI</option>
+        </field> 
+        
+        <field
+            name="currency"
+            type="list"
+            default="EUR"
+            label="COM_CHPANEL_CONFIG_CURRENCY"
+            description="COM_CHPANEL_CONFIG_CURRENCY_DESC"
+        >            
+            <option value="DZD">Algerian Dinar (DZD)</option>
+            <option value="ARS">Argentine Peso (ARS)</option>
+            <option value="AUD">Australian Dollar (AUD)</option>
+            <option value="BHD">Bahraini Dinar (BHD)</option>
+            <option value="BOB">Bolivian Boliviano (BOB)</option>
+            <option value="BWP">Botswana Pula (BWP)</option>
+            <option value="BRL">Brazilian Real (BRL)</option>
+            <option value="BND">Brunei Dollar (BND)</option>
+            <option value="BGN">Bulgarian Lev (BGN)</option>
+            <option value="CAD">Canadian Dollar (CAD)</option>
+            <option value="KYD">Cayman Is. Dollar (KYD)</option>
+            <option value="CLP">Chilean Peso (CLP)</option>
+            <option value="CNY">Chinese Yuan (CNY)</option>
+            <option value="COP">Colombian Peso (COP)</option>
+            <option value="CRC">Costa Rican Colon (CRC)</option>
+            <option value="HRK">Croatian Kuna (HRK)</option>
+            <option value="CZK">Czech Koruna (CZK)</option>
+            <option value="DKK">Danish Krone (DKK)</option>
+            <option value="DOP">Dominican Peso (DOP)</option>
+            <option value="EGP">Egyptian Pound (EGP)</option>
+            <option value="SVC">El Salvadoran Colón (SVC)</option>
+            <option value="EEK">Estonian Kroon (EEK)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="FJD">Fijian Dollar (FJD)</option>
+            <option value="HNL">Honduran Lempira (HNL)</option>
+            <option value="HKD">Hong Kong Dollar (HKD)</option>
+            <option value="HUF">Hungarian Forint (HUF)</option>
+            <option value="INR">Indian Rupee (INR)</option>
+            <option value="IDR">Indonesian Rupiah (IDR)</option>
+            <option value="ILS">Israeli New Sheqel (ILS)</option>
+            <option value="JMD">Jamaican Dollar (JMD)</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="JOD">Jordanian Dinar (JOD)</option>
+            <option value="KZT">Kazakh Tenge (KZT)</option>
+            <option value="KES">Kenyan Shilling (KES)</option>
+            <option value="KWD">Kuwaiti Dinar (KWD)</option>
+            <option value="LVL">Latvian Lats (LVL)</option>
+            <option value="LBP">Lebanese Pound (LBP)</option>
+            <option value="LTL">Lithuanian Litas (LTL)</option>
+            <option value="MKD">Macedonian Denar (MKD)</option>
+            <option value="MYR">Malaysian Ringgit (MYR)</option>
+            <option value="MUR">Mauritian Rupee (MUR)</option>
+            <option value="MXN">Mexican Peso (MXN)</option>
+            <option value="MDL">Moldovan Leu (MDL)</option>
+            <option value="MAD">Moroccan Dirham (MAD)</option>
+            <option value="ANG">N. Antillean Guilder (ANG)</option>
+            <option value="NAD">Namibian Dollar (NAD)</option>
+            <option value="NPR">Nepalese Rupee (NPR)</option>
+            <option value="NZD">New Zealand Dollar (NZD)</option>
+            <option value="NIO">Nicaraguan Cordoba (NIO)</option>
+            <option value="NGN">Nigerian Naira (NGN)</option>
+            <option value="NOK">Norwegian Krone (NOK)</option>
+            <option value="OMR">Omani Rial (OMR)</option>
+            <option value="PKR">Pakistani Rupee (PKR)</option>
+            <option value="PGK">Papua N.G. Kina (PGK)</option>
+            <option value="PYG">Paraguayan Guarani (PYG)</option>
+            <option value="PEN">Peruvian Nuevo Sol (PEN)</option>
+            <option value="PHP">Philippine Peso (PHP)</option>
+            <option value="PLN">Polish Zloty (PLN)</option>
+            <option value="QAR">Qatari Rial (QAR)</option>
+            <option value="RON">Romanian Leu (RON)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+            <option value="SAR">Saudi Riyal (SAR)</option>
+            <option value="RSD">Serbian Dinar (RSD)</option>
+            <option value="SCR">Seychellois Rupee (SCR)</option>
+            <option value="SLL">Sierra Leonean Leone (SLL)</option>
+            <option value="SGD">Singapore Dollar (SGD)</option>
+            <option value="SKK">Slovak Koruna</option>
+            <option value="ZAR">South African Rand (ZAR)</option>
+            <option value="KRW">South Korean Won (KRW)</option>
+            <option value="LKR">Sri Lankan Rupee (LKR)</option>
+            <option value="SEK">Swedish Krona (SEK)</option>
+            <option value="CHF">Swiss Franc (CHF)</option>
+            <option value="TWD">Taiwan New Dollar (TWD)</option>
+            <option value="TZS">Tanzanian Shilling (TZS)</option>
+            <option value="THB">Thai Baht (THB)</option>
+            <option value="TTD">Trinidad n Tobago Dollar (TTD)</option>
+            <option value="TND">Tunisian Dinar (TND)</option>
+            <option value="TRY">Turkish Lira (TRY)</option>
+            <option value="GBP">U.K. Pound (GBP)</option>
+            <option value="USD">U.S. Dollar (USD)</option>
+            <option value="AED">UAE Dirham (AED)</option>
+            <option value="UGX">Ugandan Shilling (UGX)</option>
+            <option value="UAH">Ukrainian Hryvnia (UAH)</option>
+            <option value="UYU">Uruguayan Peso (UYU)</option>
+            <option value="UZS">Uzbekistani Som (UZS)</option>
+            <option value="VEF">Venezuelan B.F. (VEF)</option>
+            <option value="VND">Vietnamese Dong (VND)</option>
+            <option value="YER">Yemeni Rial (YER)</option>
+            <option value="ZMK">Zambian Kwacha (ZMK)</option>
+        </field>         
+        
+    </fieldset>     
+
+
+    <!-- image uploading -->
+    <fieldset name="IMG" label="COM_CHPANEL_CONFIG_FIELDSET_IMG">
+        <field
+            name="img_big"
+            type="text"
+            default="800"
+            label="COM_CHPANEL_CONFIG_IMG_BIG"
+            description="COM_CHPANEL_CONFIG_IMG_DESC"
+        />   
+        <field
+            name="img_screen"
+            type="text"
+            default="520"
+            label="COM_CHPANEL_CONFIG_IMG_SCREEN"
+            description="COM_CHPANEL_CONFIG_IMG_DESC"
+        />
+        <field
+            name="img_med"
+            type="text"
+            default="240"
+            label="COM_CHPANEL_CONFIG_IMG_MED"
+            description="COM_CHPANEL_CONFIG_IMG_DESC"
+        />
+        <field
+            name="img_small"
+            type="text"
+            default="120"
+            label="COM_CHPANEL_CONFIG_IMG_SMALL"
+            description="COM_CHPANEL_CONFIG_IMG_DESC"
+        />
+        <field
+            name="img_tiny"
+            type="text"
+            default="60"
+            label="COM_CHPANEL_CONFIG_IMG_TINY"
+            description="COM_CHPANEL_CONFIG_IMG_DESC"
+        /> 
+        <field
+            name="img_quality"
+            type="text"
+            default="90"
+            label="COM_CHPANEL_CONFIG_IMG_QUALITY"
+            description="COM_CHPANEL_CONFIG_IMG_QUALITY_DESC"
+        />
+        <field
+            name="img_upload"
+            type="text"
+            default="1500"
+            label="COM_CHPANEL_CONFIG_IMG_UPLOAD"
+            description="COM_CHPANEL_CONFIG_IMG_UPLOAD_DESC"
+        />    
+    </fieldset>    
+
+    <!-- ACL -->    
+    <fieldset name="PERMISSIONS" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC" >        
+        <field
+            name="rules"
+            type="rules"
+            label="JCONFIG_PERMISSIONS_LABEL"
+            class="inputbox"
+            validate="rules"
+            filter="rules"
+            component="com_chpanel"
+            section="component"
+        />        
+    </fieldset>
+	
+</config>

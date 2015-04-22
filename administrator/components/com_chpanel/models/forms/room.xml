@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field
+            name="id"
+            type="text"
+            readonly="true" 
+            class="readonly"
+            label="JGLOBAL_FIELD_ID_LABEL"
+            description ="JGLOBAL_FIELD_ID_DESC"
+            default="0"
+        />
+        <field type="hidden" name="hotel_id" />
+        <field
+            name="hotel"
+            type="text"
+            label="COM_CHPANEL_ANY_HOTEL"
+            class="readonly"
+            filter="unset"
+            readonly="true"
+        />
+                
+        <field 
+            name="ordering" 
+            type="text"
+            label="JFIELD_ORDERING_LABEL"
+            description="JFIELD_ORDERING_DESC" 
+            class="inputbox" 
+            default="0" 
+        />
+        <field
+            name="state"
+            type="list"
+            class="inputbox chzn-color-state"
+            default="1"
+            size="1"
+            label="COM_CHPANEL_ANY_PUBLISHED"
+            description="COM_CHPANEL_ANY_PUBLISHED_DESC">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>        
+        <field 
+            name="created" 
+            type="calendar" 
+            label="JGLOBAL_CREATED"
+            description="JGLOBAL_CREATED_DESC" 
+            class="inputbox" 
+            format="%Y-%m-%d %H:%M:%S" 
+            filter="user_utc" 
+        />
+        <field type="hidden" name="created_by" />
+        <field type="hidden" name="checked_out" />
+        <field type="hidden" name="checked_out_time" />    
+
+        
+        
+        <!-- info fields -->
+        <field
+            name="title"
+            type="text"
+            class="inputbox input-xxlarge input-large-text"
+            label="COM_CHPANEL_ROOM_TITLE"
+            description="COM_CHPANEL_ROOM_TITLE_DESC"
+            required="true"
+        />
+        <field
+            name="alias"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_ALIAS"
+            description="COM_CHPANEL_ROOM_ALIAS_DESC"
+            hint="JFIELD_ALIAS_PLACEHOLDER" 
+        />
+        <field
+            name="reference"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_REFERENCE"
+            description="COM_CHPANEL_ROOM_REFERENCE_DESC"
+        />
+        <field
+            name="info"
+            type="textarea"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_INFO"
+            description="COM_CHPANEL_ROOM_INFO_DESC"
+        />
+        <field
+            name="text"
+            type="textarea"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_TEXT"
+            description="COM_CHPANEL_ROOM_TEXT_DESC"
+        />          
+        <field
+            name="video"
+            type="text"
+            class="inputbox"
+            label="COM_CHPANEL_ROOM_VIDEO"
+            description="COM_CHPANEL_ROOM_VIDEO_DESC"
+        />   
+        
+        <!-- config fields -->
+        <field
+            name="capacity"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_CAPACITY"
+            description="COM_CHPANEL_ROOM_CAPACITY_DESC"
+            default="2"
+        />   
+        <field
+            name="max_adult"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_MAX_ADULT"
+            description="COM_CHPANEL_ROOM_MAX_ADULT_DESC"
+            default="2"
+        />   
+        <field
+            name="max_child"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_MAX_CHILD"
+            description="COM_CHPANEL_ROOM_MAX_CHILD_DESC"
+            default="0"
+        />   
+        <field
+            name="max_baby"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_MAX_BABY"
+            description="COM_CHPANEL_ROOM_MAX_BABY_DESC"
+            default="0"
+        />   
+        <field
+            name="rate"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_RATE"
+            description="COM_CHPANEL_ROOM_RATE_DESC"
+        />   
+        <field
+            name="release"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_RELEASE"
+            description="COM_CHPANEL_ROOM_RELEASE_DESC"
+            default="0"
+        />   
+        <field
+            name="minstay"
+            type="text"
+            class="inputbox input-xxlarge"
+            label="COM_CHPANEL_ROOM_MINSTAY"
+            description="COM_CHPANEL_ROOM_MINSTAY_DESC"
+            default="1"
+        />   
+        
+     
+    </fieldset>
+    <fields name="params">
+        <fieldset name="params">
+
+        </fieldset>
+    </fields>
+</form>
