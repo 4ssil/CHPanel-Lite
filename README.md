@@ -15,6 +15,7 @@ Legend: # Bug fix     + Addition     - Feature removal     ~ Change    ! Critica
 #### Version 1.0.3
 
 	# Error displaying availability calendar when availability not found
+	+ Added Joomla auto update
 
 #### Version 1.0.2
 
