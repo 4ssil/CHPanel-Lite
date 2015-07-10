@@ -754,7 +754,12 @@ class CHPanelSearch
 		$calendar->day_start = JFactory::getDate($calendar->start)->format('w');
 
 		// get the inventory for the month
-		$rooms_ids_q = implode(',', $this->rooms_ids);
+		$rooms_ids = array();
+		foreach ($this->calendar_rooms as $r)
+		{
+			$rooms_ids[] = $r->id;
+		}
+		$rooms_ids_q = implode(',', $rooms_ids);
 		$query = $db->getQuery(true);
 		$query->select('a.room_id, a.date, a.rate, a.availability')
 			->from('#__chpanel_inventory AS a')
