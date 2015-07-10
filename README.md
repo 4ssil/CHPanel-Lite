@@ -12,17 +12,21 @@ The Changelog is provided in reverse chronological order.
 
 Legend: # Bug fix     + Addition     - Feature removal     ~ Change    ! Critical bug fix     ^ Minor edit
 
-#### Version 1.0.2 
-	
+#### Version 1.0.3
+
+	# Error displaying availability calendar when availability not found
+
+#### Version 1.0.2
+
 	~ Joomla coding standards
 	~ php 5.4 echo shortctuts
 	# Buildata on save translation
 	# JInput instead of JRequest to avoid K2 plugin errors
 
 #### Version 1.0.1
-	
+
 	~ Fixed administrator menu issue
 
 #### Version 1.0.0 - Initial release
-	
+
 	Initial release
