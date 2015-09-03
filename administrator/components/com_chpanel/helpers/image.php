@@ -46,19 +46,20 @@ class CHPanelHelperImage
 
 	function imageFormat($file, $message = false)
 	{
-		if ($file['type'] == "image/pjpeg")
+		// get the image data using secure php getimagesize function
+		$image = getimagesize($file['tmp_name']);
+
+		// check image is jpg
+		if (!$image || !isset($image[2]) || $image[2] != IMAGETYPE_JPEG)
 		{
-			return "jpg";
+			if ($message)
+			{
+				$this->app->enqueueMessage(JText::_('COM_CHPANEL_ANY_IMAGE_ERROR_FORMAT'), 'error');
+			}
+			return false;
 		}
-		if ($file['type'] == "image/jpeg")
-		{
-			return "jpg";
-		}
-		if ($message)
-		{
-			$this->app->enqueueMessage(JText::_('COM_CHPANEL_ANY_IMAGE_ERROR_FORMAT'), 'error');
-		}
-		return false;
+
+		return "jpg";
 	}
 
 	function imageSize($file, $message = false)
