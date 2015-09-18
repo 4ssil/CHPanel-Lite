@@ -15,6 +15,7 @@ Legend: # Bug fix     + Addition     - Feature removal     ~ Change    ! Critica
 #### Version 1.0.4
 
 	# Fixed JDate error appeared since Joomla 3.4.4
+	^ check image uploads using getimagesize
 
 #### Version 1.0.3
 
