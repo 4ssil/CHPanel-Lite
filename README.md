@@ -12,6 +12,10 @@ The Changelog is provided in reverse chronological order.
 
 Legend: # Bug fix     + Addition     - Feature removal     ~ Change    ! Critical bug fix     ^ Minor edit
 
+#### Version 1.0.4
+
+	# Fixed JDate error appeared since Joomla 3.4.4
+
 #### Version 1.0.3
 
 	# Error displaying availability calendar when availability not found

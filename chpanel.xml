@@ -8,7 +8,7 @@
 	<authorUrl>http://www.cloudhotelier.com</authorUrl>
 	<copyright>Copyright (C) 2014 . All rights reserved.</copyright>
 	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<description>COM_CHPANEL_DESC</description>
 
 	<administration>
@@ -54,7 +54,7 @@
 			<file driver="mysqli">queries/uninstall.sql</file>
 		</sql>
 	</uninstall>
-	
+
 	<updateservers>
 		<server type="extension" priority="1" name="com_chpanel updates">https://secure.cloudhotelier.com/versions/com_chpanel.xml</server>
 	</updateservers>
