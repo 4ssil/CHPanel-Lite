@@ -57,7 +57,6 @@ class CHPanelModelBooking extends JModelAdmin
 			{
 				$filters = JFactory::getApplication()->getUserState('com_chpanel.bookings.filter');
 				$data->set('hotel_id', $filters['hotel']);
-				$data->set('created', '-');
 			}
 
 			// hotel

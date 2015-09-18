@@ -57,7 +57,6 @@ class CHPanelModelRoom extends JModelAdmin
 			{
 				$filters = JFactory::getApplication()->getUserState('com_chpanel.rooms.filter');
 				$data->set('hotel_id', $filters['hotel']);
-				$data->set('created', '-');
 			}
 
 			// hotel
