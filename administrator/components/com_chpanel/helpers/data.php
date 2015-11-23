@@ -225,7 +225,7 @@ class CHPanelHelperData
 					$params->tags = isset($params->tags) ? array_keys((array) $params->tags) : array();
 					$params->rooms = isset($params->rooms) ? array_keys((array) $params->rooms) : array();
 
-					if (($type == 'hotel' && $params->tags) || ($type = 'room' && in_array($item->id, $params->rooms)))
+					if (($type == 'hotel' && $params->tags) || ($type == 'room' && in_array($item->id, $params->rooms)))
 					{
 
 						$path_image = JUri::root() . 'images/chpanel/images/' . $image->id;
