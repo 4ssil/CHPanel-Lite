@@ -24,8 +24,8 @@ class CHPanelHelperData
 
 		// get db info
 		$hotels = $db->setQuery('SELECT * FROM #__chpanel_hotels AS a WHERE a.state = 1')->loadObjectList();
-		$images = $db->setQuery('SELECT * FROM #__chpanel_images AS a WHERE a.state = 1')->loadObjectList();
-		$rooms = $db->setQuery('SELECT * FROM #__chpanel_rooms AS a WHERE a.state = 1')->loadObjectList();
+		$images = $db->setQuery('SELECT * FROM #__chpanel_images AS a WHERE a.state = 1 order by a.ordering')->loadObjectList();
+		$rooms = $db->setQuery('SELECT * FROM #__chpanel_rooms AS a WHERE a.state = 1 order by a.ordering')->loadObjectList();
 		$languages = CHPanelHelperLangs::getLangs();
 		$translations = $db->setQuery('SELECT * FROM #__chpanel_translations AS a')->loadObjectList();
 
